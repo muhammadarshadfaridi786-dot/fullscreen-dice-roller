@@ -51,6 +51,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
     apple: "/favicon.svg",
   },
+  verification: {
+    google: "TK1K50mhjfAe4XHqmVL3q4jPn6Gdj-6Fe3B2YsjyXJE",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
