@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fullscreen-dice-roller.vercel.app/sitemap.xml
