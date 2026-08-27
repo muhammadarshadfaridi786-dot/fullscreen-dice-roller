@@ -324,7 +324,7 @@ export default function Home() {
           <h1 className="text-3xl font-bold text-white sm:text-4xl">
             Fullscreen Dice Roller
           </h1>
-          <p className="text-lg font-medium text-white/90 sm:text-xl">
+          <p className="text-lg font-medium text-white sm:text-xl">
             Click the dice to roll!
           </p>
         </div>
@@ -333,7 +333,7 @@ export default function Home() {
           type="button"
           onClick={rollDice}
           disabled={isRolling}
-          aria-label="Roll the dice"
+          aria-label={`Dice showing number ${value}. Click to roll.`}
           className={`flex h-32 w-32 cursor-pointer items-center justify-center rounded-2xl bg-white shadow-xl transition-transform duration-150 hover:scale-105 hover:shadow-2xl disabled:cursor-not-allowed sm:h-40 sm:w-40 ${
             isRolling ? "animate-bounce" : ""
           }`}
@@ -341,7 +341,7 @@ export default function Home() {
           <DiceFace value={value} />
         </button>
 
-        <p className="max-w-md text-center text-sm text-white/80">
+        <p className="max-w-md text-center text-sm text-white">
           The fastest fullscreen dice roller online: no download, no signup,
           just click to roll.
         </p>
@@ -352,7 +352,7 @@ export default function Home() {
 
         {history.length > 0 && (
           <div className="flex flex-col items-center gap-2">
-            <p className="text-sm font-medium uppercase tracking-wide text-white/70">
+            <p className="text-sm font-medium uppercase tracking-wide text-white">
               Roll History
             </p>
             <div className="flex max-w-md flex-wrap items-center justify-center gap-2">
