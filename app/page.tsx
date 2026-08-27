@@ -97,11 +97,11 @@ const TWO_DICE_ROWS: (string | number)[][] = [
 const USE_CASES = [
   {
     title: "Board Games",
-    desc: "Determine movement, actions, and turn order",
+    desc: "Roll a dice for board game online to determine movement, actions, and turn order",
   },
   {
     title: "Classroom Activities",
-    desc: "Counting, arithmetic, multiplication, probability experiments",
+    desc: "A dice roller for classroom counting, arithmetic, multiplication, and probability experiments",
   },
   {
     title: "Probability Demonstrations",
@@ -321,7 +321,9 @@ export default function Home() {
 
       <div className="flex min-h-screen w-full flex-col items-center justify-center gap-10 px-4 py-16">
         <div className="flex flex-col items-center gap-2">
-          <h1 className="text-3xl font-bold text-white sm:text-4xl">Dice Roller</h1>
+          <h1 className="text-3xl font-bold text-white sm:text-4xl">
+            Fullscreen Dice Roller
+          </h1>
           <p className="text-lg font-medium text-white/90 sm:text-xl">
             Click the dice to roll!
           </p>
@@ -338,6 +340,11 @@ export default function Home() {
         >
           <DiceFace value={value} />
         </button>
+
+        <p className="max-w-md text-center text-sm text-white/80">
+          The fastest fullscreen dice roller online: no download, no signup,
+          just click to roll.
+        </p>
 
         <p className="text-xl font-medium text-white sm:text-2xl">
           Your number: <span className="font-bold">{value}</span>
@@ -369,11 +376,13 @@ export default function Home() {
             <SectionHeading>How to Use the Online Dice Roller</SectionHeading>
             <p className="leading-relaxed text-gray-700 dark:text-gray-300">
               Click or tap the dice to roll it. Each roll produces a random
-              number from 1 through 6. The dice animates briefly before
-              showing the final result. A rolling sound plays on each click.
-              Your last 10 results appear in the Roll History section below
-              the dice. Use the Dark Mode toggle in the top right corner to
-              switch themes.
+              number from 1 through 6, and the dice animates briefly before
+              showing the final result while a rolling sound plays on each
+              click. Since this is online dice with no download required,
+              you can click to roll dice online instantly from any browser
+              on any device. Your last 10 results appear in the Roll
+              History section below the dice, and you can use the Dark
+              Mode toggle in the top right corner to switch themes.
             </p>
           </div>
 
@@ -432,12 +441,13 @@ export default function Home() {
           <div className="mb-14">
             <SectionHeading>How This Dice Roller Works</SectionHeading>
             <p className="leading-relaxed text-gray-700 dark:text-gray-300">
-              Each roll is generated in the browser using JavaScript&apos;s
-              Math.random() function, ensuring every face from 1 through 6
-              has an equal probability of 1/6 or approximately 16.67%. The
+              This virtual dice roller generates each roll in your browser
+              using JavaScript&apos;s Math.random() function, ensuring every
+              face from 1 through 6 has an equal probability of 1/6, or
+              approximately 16.67%. As a true random dice roller, the
               animation is purely visual and does not affect the result.
-              Previous rolls have no influence on future results. Every roll
-              is completely independent.
+              Previous rolls have no influence on future results, so every
+              roll is completely independent.
             </p>
           </div>
 

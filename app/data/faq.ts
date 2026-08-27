@@ -39,4 +39,12 @@ export const FAQ_ITEMS = [
     q: "What does d6 mean?",
     a: "d6 is gaming notation for a six-sided die. The d stands for die and the number indicates how many faces it has. Two six-sided dice are written as 2d6.",
   },
+  {
+    q: "Can I use this as a dice roller for classroom activities without downloading anything?",
+    a: "Yes! This is a completely free online dice roller, no download, no signup required. Just open the link and click the dice. Perfect for classroom probability lessons, board games, and quick random decisions.",
+  },
+  {
+    q: "Is this a fullscreen dice roller?",
+    a: "Yes, this virtual dice roller works in fullscreen mode on any device, desktop, tablet, or mobile. Just press F11 on desktop for a true fullscreen experience.",
+  },
 ];
